@@ -11,7 +11,7 @@ if($id == $secretId){
 }
 else{
 	require 'db.php';
-	$query = 'SELECT * FROM users WHERE id = \''.$id.'\';';
+	$query = 'SELECT * FROM names WHERE id = \''.$id.'\';';
 	if(mysql_errno())die(mysql_error());
     $result = mysql_query($query);
     $row = mysql_fetch_assoc($result);
